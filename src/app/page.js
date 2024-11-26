@@ -1,18 +1,17 @@
+import Homepage from "@/components/Homepage/Homepage";
+import Footer from "@/components/Shared/Footer";
+import Navbar from "@/components/Shared/Navbar";
+import OverView from "@/components/SideBarContents/OverView";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
+      {/* <Navbar/> */}
       <main>
-        <button className="btn">Button</button>
-        <button className="btn btn-neutral">Neutral</button>
-        <button className="btn btn-primary">Primary</button>
-        <button className="btn btn-secondary">Secondary</button>
-        <button className="btn btn-accent">Accent</button>
-        <button className="btn btn-ghost">Ghost</button>
-        <button className="btn btn-link">Link</button>
+        <OverView/>
       </main>
-      <footer></footer>
+      {/* <Footer/> */}
     </div>
   );
 }
