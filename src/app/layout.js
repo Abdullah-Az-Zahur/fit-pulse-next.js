@@ -24,21 +24,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <div className="flex h-screen">
+        <div className="flex h-screen bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200">
           {/* Sidebar */}
           <div className="">
             <Sidebar />
           </div>
 
           {/* Main Content */}
-          <div className="flex flex-col flex-1">
+          <div className="flex flex-col flex-1 ">
             {/* Navbar */}
             <Navbar />
 
             {/* Main Section */}
-            <main className="flex-1 p-4 bg-gray-100 overflow-auto">
+            <main className="flex-1 p-4 bg-transparent overflow-auto">
               {children}
             </main>
 

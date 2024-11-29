@@ -9,7 +9,7 @@ const Sidebar = () => {
     { name: "Setting", href: "/setting" },
   ];
   return (
-    <aside className="w-full h-full text-white p-4">
+    <aside className="w-full h-full text-white p-4 bg-transparent">
       <div className="flex flex-col justify-between h-full py-5">
         <div>
           <p>clock</p>
