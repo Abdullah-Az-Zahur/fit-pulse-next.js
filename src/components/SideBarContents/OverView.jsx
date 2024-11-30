@@ -6,6 +6,12 @@ import glucose from "../../../public/assets/images/glucose.png";
 import body from "../../../public/assets/images/body.png";
 import heart from "../../../public/assets/images/heart.png";
 import Image from "next/image";
+import HeartRateCard from "../Cards/HeartRateCard";
+import WeightCard from "../Cards/WeightCard";
+import FoodCard from "../Cards/FoodCard";
+import SleepCard from "../Cards/SleepCard";
+import ActivityCard from "../Cards/ActivityCard";
+import GlucoseCard from "../Cards/GlucoseCard";
 
 const OverView = () => {
   return (
@@ -14,14 +20,24 @@ const OverView = () => {
       <section className="w-2/3">
         <div className="flex justify-between gap-2">
           <TempCard title={"Temperature"} value={27} img={thermometer} />
-          <TempCard title={"Heart Rate"} value={27} img={heart} />
-          <TempCard title={"Glucose"} value={27} img={glucose} />
+          <HeartRateCard title={"Heart Rate"} value={27} img={heart} />
+          <GlucoseCard title={"Glucose"} value={27} img={glucose} />
         </div>
+
         <div className="border-2 rounded-2xl p-2 mt-2">
           <h2 className="text-2xl text-black font-bold text-left">
             Body Conditions
           </h2>
-          
+          <div className="flex">
+            <div className="w-2/3">
+              <div className="flex">
+                <WeightCard />
+                <FoodCard />
+              </div>
+              <SleepCard />
+            </div>
+            <ActivityCard />
+          </div>
         </div>
       </section>
       {/* Right Section */}
