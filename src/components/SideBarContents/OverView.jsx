@@ -9,21 +9,25 @@ import Image from "next/image";
 
 const OverView = () => {
   return (
-    <div className="flex">
+    <div className="flex ">
       {/* Left Section */}
       <section className="w-2/3">
-        <h3>Over View</h3>
         <div className="flex justify-between gap-2">
           <TempCard title={"Temperature"} value={27} img={thermometer} />
           <TempCard title={"Heart Rate"} value={27} img={heart} />
           <TempCard title={"Glucose"} value={27} img={glucose} />
         </div>
+        <div className="border-2 rounded-2xl p-2 mt-2">
+          <h2 className="text-2xl text-black font-bold text-left">
+            Body Conditions
+          </h2>
+          
+        </div>
       </section>
       {/* Right Section */}
-      <section>
-        
-        <div className="flex justify-between gap-2 h-screen">
-          <Image src={body} alt="body" />
+      <section className="border-2 rounded-2xl p-2 ml-4 flex-1">
+        <div className="h-[calc(100vh-168px)] max-h-screen overflow-hidden">
+          <Image className="mx-auto object-cover" src={body} alt="body" />
         </div>
       </section>
     </div>
