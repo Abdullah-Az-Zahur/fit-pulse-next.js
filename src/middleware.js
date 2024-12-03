@@ -10,5 +10,5 @@ export const middleware = (request) => {
 };
 
 export const config = {
-  matcher: ['/'],
+  matcher: ['/', '/heart', '/message','/note', '/setting'],
 };

@@ -43,7 +43,7 @@ const page = () => {
             type="submit"
             className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           >
-            Sign In
+            Log In
           </button>
         </form>
 
@@ -58,10 +58,10 @@ const page = () => {
           </button>
         </div>
         <h2 className="">
-          Not Have an Account?{" "}
+          Already Have an Account?{" "}
           <button>
-            <Link className="text-red-500 underline pl-2" href={`/signup`}>
-              Sing up
+            <Link className="text-red-500 underline pl-2" href={`/login`}>
+              Sing in
             </Link>
           </button>
         </h2>

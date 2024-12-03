@@ -7,11 +7,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      {/* <Navbar/> */}
       <main>
-        <OverView/>
+        <OverView />
       </main>
-      {/* <Footer/> */}
     </div>
   );
 }
